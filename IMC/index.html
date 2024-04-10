@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        $h = prompt("Qual a sua altura?")
+        alert("Sua altura é: " + $h)
+        $peso = prompt("Qual o seu peso?")
+        alert("Seu peso é: " + $peso)
+        $IMC = $peso / ($h * $h)
+        alert("" + $IMC)
+        document.write("<table border='1' width='600'>")
+        document.write("<TR>")
+        document.write("<TD width='300'> <b> ALTURA </b> </TD>")
+        document.write("<TD width='150'> <b> PESO </b> </TD>")
+        document.write("<TD width='150'> <b> IMC </b> </TD>")
+        document.write("<TD width='200'> <b> FOTO </b> </TD>")
+        document.write("</TR>")
+        document.write("<TR>")
+        document.write("<TD width='300'> <b>" + $h + " </b> </TD>")
+        document.write("<TD width='150'> <b>" + $peso + " </b> </TD>")
+        document.write("<TD width='150'> <b>" + $IMC + " </b> </TD>")
+        if ($IMC < 18.5) {
+            document.write("<TD width='200'> <img src='IMGS/MAGRO.jpg'></a></TD>")
+        }
+        if (($IMC > 18.4) && $IMC < 25.0) {
+            document.write("<TD width='200'> <img src='IMGS/NORMAL.jpg'></a></TD>")
+        }
+        if (($IMC > 24.9) && $IMC < 30.00) {
+            document.write("<TD width='200'> <img src='IMGS/SOBREPESO.jpg'></a></TD>")
+        }
+        if ($IMC > 29.9) {
+            document.write("<TD width='200'> <img src='IMGS/OBESIDADE.jpg'></a></TD>")
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
