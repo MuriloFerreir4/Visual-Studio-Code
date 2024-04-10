@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        alert("Hello world!")
+        $nome = prompt("Digite seu nome")
+        alert("O nome digitado foi: " + $nome)
+        $idade = prompt("Digite sua idade")
+        alert("Sua idade é: " + $idade)
+        $sexo = prompt("Qual é o sexo? [Masculino] ou [Feminino]")
+
+        if (($sexo == "Masculino") || ($sexo == "masculino")) {
+            alert("Seu sexo é Masculino")
+        }
+        else {
+            alert("Seu sexo é Feminino")
+        }
+        if ($idade < 18){
+            if (($sexo == "Masculino") || ($sexo == "masculino")){
+                alert("Menino")
+            }
+            else{
+                alert("Menina")
+            }
+        }
+        if ($idade > 17){
+            if (($sexo == "Masculino") || ($sexo == "masculino")){
+                alert("Homem")
+            }
+            else{
+                alert("Mulher")
+            }
+        }
+        document.write("<table border='1' width='600'>")
+        document.write("<TR>")
+        document.write("<TD width='300'> <b> NOME </b> </TD>")
+        document.write("<TD width='150'> <b> IDADE </b> </TD>")
+        document.write("<TD width='150'> <b> SEXO </b> </TD>")
+        document.write("<TD width='200'> <b> FOTO </b> </TD>")
+        document.write("</TR>")
+        document.write("<TR>")
+        document.write("<TD width='300'> <b>" + $nome + " </b> </TD>")
+        document.write("<TD width='150'> <b>" + $idade + " </b> </TD>")
+        document.write("<TD width='150'> <b>" + $sexo + " </b> </TD>")
+        if ($idade < 18){
+            if(($sexo == "Masculino") || ($sexo == "masculino")){
+                document.write("<TD width='200'> <img src='IMG/menino.jpg' wdith='60%''></a></TD>")
+                document.write("</TR>")
+            }
+            else{
+                document.write("<TD width='200'> <img src='IMG/menina.jpg' wdith='60%''></a></TD>")
+                document.write("</TR>")
+            }
+        }
+        if ($idade > 17){
+            if(($sexo == "Masculino") || ($sexo == "masculino")){
+                document.write("<TD width='200'> <img src='IMG/homem.jpg' wdith='60%''></a></TD>")
+                document.write("</TR>")
+            }
+            else{
+                document.write("<TD width='200'> <img src='IMG/mulher.jpg' wdith='60%''></a></TD>")
+                document.write("</TR>")
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
