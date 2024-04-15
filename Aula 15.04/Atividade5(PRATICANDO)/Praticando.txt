@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        $dia = prompt("Digite o dia da semana")
+        switch ($dia) {
+            case "domingo":
+            case "sábado":
+            case "Domingo":
+            case "Sábado":
+                document.write("Hoje é final de semana <br>")
+                break
+            case "segunda":
+            case "terça":
+            case "quarta":
+            case "quinta":
+            case "sexta":
+            case "Segunda":
+            case "Terça":
+            case "Quarta":
+            case "Quinta":
+            case "Sexta":
+            case "segunda-feira":
+            case "terça-feira":
+            case "quarta-feira":
+            case "quinta-feira":
+            case "sexta-feira":
+            case "Segunda-feira":
+            case "Terça-feira":
+            case "Quarta-feira":
+            case "Quinta-feira":
+            case "Sexta-feira":
+                document.write("Hoje não é final de semana <br>")
+                break
+        }
+        $mes = prompt("Digite um número de 1 até 12 para os meses")
+        switch ($mes) {
+            case "1":
+                document.write("Janeiro <br>")
+                document.write("Verão")
+                break
+            case "2":
+                document.write("Fevereiro <br>")
+                document.write("Verão")
+                break
+            case "3":
+                document.write("Março <br>")
+                document.write("Outono")
+                break
+            case "4":
+                document.write("Abril <br>")
+                document.write("Outono")
+                break
+            case "5":
+                document.write("Maio <br>")
+                document.write("Outono")
+                break
+            case "6":
+                document.write("Junho <br>")
+                document.write("Inverno")
+                break
+            case "7":
+                document.write("Julho <br>")
+                document.write("Inverno")
+                break
+            case "8":
+                document.write("Agosto <br>")
+                document.write("Inverno")
+                break
+            case "9":
+                document.write("Setembro <br>")
+                document.write("Primavera")
+                break
+            case "10":
+                document.write("Outubro <br>")
+                document.write("Primavera")
+                break
+            case "11":
+                document.write("Novembro <br>")
+                document.write("Primavera")
+                break
+            case "12":
+                document.write("Dezembro <br>")
+                document.write("Verão")
+                break
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
