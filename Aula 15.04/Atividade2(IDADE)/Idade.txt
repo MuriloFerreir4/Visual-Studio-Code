@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        $idade = prompt("Digite uma idade")
+        if ($idade < 13) {
+            alert($status = "Criança")
+        }
+        if (($idade > 12) && $idade < 18) {
+            alert($status = "Adolescente")
+        }
+        if (($idade > 17) && $idade < 60) {
+            alert($status = "Adulto")
+        }
+        if ($idade > 59) {
+            alert($status = "Idoso")
+        }
+        document.write("<center>")
+        document.write("<table border='1' width='450'>")
+        document.write("<tr>")
+        document.write("<td wdith='200'> <b> <font size=5> IDADE </b> </td>")
+        document.write("<td wdith='150'> <b> <font size=5> STATUS </b> </td>")
+        document.write("<td wdith='100'> <b> <font size=5> FOTO </b> </td>")
+        document.write("<tr>")
+        document.write("<td> <b> <font size=5>" + $idade + " anos</b> </td>")
+        document.write("<td> <b> <font size=5>" + $status + "</b> </td>")
+        if ($idade < 13) {
+            document.write("<td wdith='100'> <img src='IMGS/crianças.jpg'> </td>")
+        }
+        if (($idade > 12) && $idade < 18) {
+            document.write("<td wdith='100'> <img src='IMGS/adolescentes.jpg'> </td>")
+        }
+        if (($idade > 17) && $idade < 60) {
+            document.write("<td wdith='100'> <img src='IMGS/adultos.jpg'> </td>")
+        }
+        if ($idade > 59) {
+            document.write("<td wdith='100'> <img src='IMGS/idosos.jpg'> </td>")
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
