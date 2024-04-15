@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        $qtd = prompt("Quantas peças possui no estoque")
+        if ($qtd < 50) {
+            $estado = ("<font color='#FF0000'> BAIXO")
+        }
+        if (($qtd > 49) && $qtd < 100) {
+            $estado = ("<font color='#FFFF00'> NORMAL")
+        }
+        if ($qtd > 99) {
+            $estado = ("<font color='#008000'> ALTO")
+        }
+        document.write("<center>")
+        document.write("<table border='1' width='575'>")
+        document.write("<tr>")
+        document.write("<td wdith='200'> <b> <font size=5> QUANTIDADE </b> </td>")
+        document.write("<td wdith='200'> <b> <font size=5> ESTADO </b> </td>")
+        document.write("<td wdith='200'> <b> <font size=5> FOTO </b> </td>")
+        document.write("<tr>")
+        document.write("<tr>")
+        document.write("<td wdith='200'> <b> <font size=5>" + $qtd + "</b> </td>")
+        if ($qtd < 50) {
+            document.write("<td wdith='200'> <b> <font size=5>" + $estado + "</b> </td>")
+            document.write("<td wdith='175'> <img src='IMGS/BAIXO.jpg'> </td>")
+        }
+        if (($qtd > 49) && $qtd < 100) {
+            document.write("<td wdith='200'> <b> <font size=5>" + $estado + "</b> </td>")
+            document.write("<td wdith='175'> <img src='IMGS/NORMAL.jpg'> </td>")
+        }
+        if ($qtd > 99) {
+            document.write("<td wdith='200'> <b> <font size=5>" + $estado + "</b> </td>")
+                document.write("<td wdith='175'> <img src='IMGS/ALTO.jpg'> </td>")
+        }
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>
