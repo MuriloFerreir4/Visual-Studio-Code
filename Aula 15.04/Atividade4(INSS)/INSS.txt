@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        $renda = prompt("Qual o seu salário?")
+        if ($renda < 1100.01) {
+            $porcentagem = "7.5%"
+            $porcentagem_aliquota = 0.075
+        }
+        if (($renda > 1100.00) && $renda < 2203.49) {
+            $porcentagem = "9%"
+            $porcentagem_aliquota = 0.09
+        }
+
+        if (($renda > 2203.48) && $renda < 3305.23) {
+            $porcentagem = "12%"
+            $porcentagem_aliquota = 0.12
+        }
+        if ($renda > 3305.22) {
+            $porcentagem = "14%"
+            $porcentagem_aliquota = 0.14
+        }
+        $v_descontado_INSS = $renda * $porcentagem_aliquota
+        $resultado = $renda - $v_descontado_INSS
+        document.write("<center>")
+        document.write("<table border='1' width='900'>")
+        document.write("<tr>")
+        document.write("<td width='150'> <b> <font size='5'> SALÁRIO </b> </td>")
+        document.write("<td width='300'> <b> <font size='5'> ALIQUOTA </b> </td>")
+        document.write("<td width='150'> <b> <font size='4'> VALOR DESCONTADO INSS </b> </td>")
+        document.write("<td width='300'> <b> <font size='5'> RESULTADO </b> </td>")
+        document.write("</tr>")
+        document.write("<tr>")
+        document.write("<td width='150'> <b> <font size='5'>" + $renda + "</b> </td>")
+        document.write("<td width='300'> <b> <font size='5'>" + $porcentagem_aliquota + "</b> </td>")
+        document.write("<td width='150'> <b> <font size='5'>" + $v_descontado_INSS.toFixed(2) + "</b> </td>")
+        document.write("<td width='300'> <b> <font size='5'>" + $resultado + "</b> </td>")
+        document.write("</tr>")
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
