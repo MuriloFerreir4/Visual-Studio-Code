@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        $porta = prompt("Digite um número de 1 a 4 para abrir uma porta")
+        switch ($porta) {
+            case "1":
+                document.write("<center>")
+                document.write("<font size='6'> PARABÉNS!!!")
+                document.write("<br>")
+                document.write("<table border='1' wdith='300'>")
+                document.write("<tr>")
+                document.write("<td wdith='300'> <b> PORTA 1 </b> </td>")
+                document.write("</tr>")
+                document.write("<tr>")
+                document.write("<td wdith='300' height='150'> <img src='IMGS/PS5.jpg'> </td>")
+                document.write("</tr>")
+                break
+            case "2":
+                document.write("<center>")
+                document.write("<font size='6'> Não foi dessa vez")
+                document.write("<br>")
+                document.write("<table border='1' wdith='300'>")
+                document.write("<tr>")
+                document.write("<td wdith='300'> <b> PORTA 2 </b> </td>")
+                document.write("</tr>")
+                document.write("<tr>")
+                document.write("<td wdith='300' height='150'> <img src='IMGS/laptop_do-BENIO.jpg'> </td>")
+                document.write("</tr>")
+                break
+            case "3":
+                document.write("<center>")
+                document.write("<font size='6'> PARABÉNS!!!")
+                document.write("<br>")
+                document.write("<table border='1' wdith='300'>")
+                document.write("<tr>")
+                document.write("<td wdith='300'> <b> PORTA 3 </b> </td>")
+                document.write("</tr>")
+                document.write("<tr>")
+                document.write("<td wdith='300' height='150'> <img src='IMGS/PC.jpg'> </td>")
+                document.write("</tr>")
+                break
+            case "4":
+                document.write("<center>")
+                document.write("<font size='6'> Não foi dessa vez")
+                document.write("<br>")
+                document.write("<table border='1' wdith='300'>")
+                document.write("<tr>")
+                document.write("<td wdith='300'> <b> PORTA 4 </b> </td>")
+                document.write("</tr>")
+                document.write("<tr>")
+                document.write("<td wdith='300' height='150'> <img src='IMGS/Polystation.jpg'> </td>")
+                document.write("</tr>")
+                break
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
