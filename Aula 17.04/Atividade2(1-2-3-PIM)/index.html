@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        $X = prompt
+        $MAX = prompt("Digite o número máximo de repetições que deseja")
+        for ($X = 1; $X <= $MAX; $X++) {
+            if (parseInt($X) % 4 == 0) {
+                document.write("<font color='purple' size='5'>PIM </font>")
+                document.write("<br>")
+            }
+            else {
+                document.write("<font size='5'>" + $X)
+                document.write("<br>")
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
