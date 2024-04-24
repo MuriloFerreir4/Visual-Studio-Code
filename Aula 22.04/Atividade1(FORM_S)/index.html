@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function laranja() {
+            $Usuário_f = this.FORM.fUsuário.value
+            $Usuário = "Senai"
+            $Senha = "Sumaré42"
+            $Senha_f = this.FORM.fSenha.value
+            if ($Senha_f !== $Senha) {
+                document.write("<center> <a href='./index.html'> <img src='IMGS/PARAAI'> </a> <br>")
+                document.write("<font size='5'> Senha incorreta ou usuário inválido, tente novamente")
+                return false
+            }
+            if ($Usuário_f !== $Usuário) {
+                document.write("<center> <a href='./index.html'> <img src='IMGS/PARAAI'> </a> <br>")
+                document.write("<font size='5'> Senha incorreta ou usuário inválido, tente novamente")
+                return false
+            }
+            else {
+                document.write("<center> <a href='./formulário.html'> <img src='IMGS/PASSAAI'> </a> <br>")
+                document.write("<font size='5'> Usuário validado com sucesso! </font>")
+            }
+            return false
+        }
+    </script>
+</head>
+
+<body>
+    <center>
+        <table border="2" width="350" height="280">
+            <td>
+                <center>
+                    <img src="IMGS/SENAS-1"><br>
+                    <form name="FORM" action="" method="post" onsubmit="return laranja()">
+                        <font size="4"> Usuário: <input type="text" name="fUsuário" size="10"> <br> <br>
+                        Senha: <input type="password" name="fSenha" size="10"> </font><br> <br>
+                        <input type="submit" value="Entrar">
+                    </form>
+                </center>
+            </td>
+        </table>
+    </center>
+</body>
+
+</html>

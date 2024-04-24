@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <Script>
+        function pólvora() {
+            $fruta = ""
+            if (this.FORM.fBanana.checked) {
+                $fruta = $fruta + "-Banana"
+            }
+            if (this.FORM.fMaça.checked) {
+                $fruta = $fruta + "-Maça"
+            }
+            if (this.FORM.fUva.checked) {
+                $fruta = $fruta + "-Uva"
+            }
+            if (this.FORM.fPêra.checked) {
+                $fruta = $fruta + "-Pêra"
+            }
+            if (this.FORM.fAbacate.checked) {
+                $fruta = $fruta + "-Abacate"
+            }
+            if (this.FORM.fManga.checked) {
+                $fruta = $fruta + "-Manga"
+            }
+            alert("As frutas escolhidas foram: " + $fruta)
+
+            $curso = this.FORM.fCurso.value
+            alert("Curso = " + $curso)
+            return false
+        }
+    </Script>
+</head>
+
+<body>
+    <center>
+        <table border="1" width="200" height="250">
+            <td>
+                <form name="FORM" action="" method="post" onsubmit="return pólvora()">
+                    <font size="5"> Escolha uma fruta: <br>
+                        <input type="checkbox" name="fBanana"> Banana <br>
+                        <input type="checkbox" name="fMaça"> Maça <br>
+                        <input type="checkbox" name="fUva"> Uva <br>
+                        <input type="checkbox" name="fPêra"> Pêra <br>
+                        <input type="checkbox" name="fAbacate"> Abacate <br>
+                        <input type="checkbox" name="fManga"> Manga
+                    </font> <br>
+                    <input type="submit" name="Gravar">
+                    <input type="hidden" name="fCurso" value="DS">
+                </form>
+                </form>
+        </table>
+    </center>
+</body>
+
+</html>

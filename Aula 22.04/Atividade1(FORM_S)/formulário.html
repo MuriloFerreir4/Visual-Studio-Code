@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function CHUVA() {
+            $nome = this.FORM2.nm.value
+            $idade = this.FORM2.id.value
+            $sexo = this.FORM2.fSexo.value
+            $curso = this.FORM2.Curso.value
+            $turno = this.FORM2.Turn.value
+            $professor1 = this.FORM2.prof1.value
+            $professor2 = this.FORM2.prof2.value
+            $disciplina = this.FORM2.fav.value
+            $qtdcaractere_nome = $nome.length
+            $qtdcaractere_idade = $idade.length
+            $qtdcaractere_prof1 = $professor1.length
+            $qtdcaractere_prof2 = $professor2.length
+            if ($qtdcaractere_nome < 3) {
+                alert("Digite seu nome")
+                return false
+            }
+            if ($qtdcaractere_idade < 1) {
+                alert("Informe sua idade")
+                return false
+            }
+            if ($sexo !== "Masculino" && $sexo !== "Feminino" && $sexo !== "Outro") {
+                alert("Informe seu sexo")
+            }
+            if ($curso !== "DS" && $curso !== "MECÂNICA" && $curso !== "SOLDA") {
+                alert("Informe seu curso")
+                return false
+            }
+            if ($turno !== "MANHÃ" && $turno !== "TARDE" && $turno !== "NOITE") {
+                alert("Informe o turno do seu curso")
+                return false
+            }
+            if ($qtdcaractere_prof1 < 3) {
+                alert("Informe quem são seus professores")
+                return false
+            }
+            if ($qtdcaractere_prof2 < 3) {
+                alert("Informe quem são seus professores")
+                return false
+            }
+            if ($disciplina !== "HTML" && $disciplina !== "JAVASCRIPT" && $disciplina !== "ARDUINO" && $disciplina !== "LÓGICA" && $disciplina !== "GESTALT") {
+                alert("Escolha uma disciplina")
+                return false
+            }
+            document.write("<center>")
+            document.write("<table border='1' width='450' height='200'>")
+            document.write("<td>")
+            document.write("<center> <font size='7'> <b> BEM VINDO(A)! </b> </font> </center>")
+            document.write("<font size='3'> Seu nome é " + $nome + ", você tem " + $idade + " anos e esta cursando " + $curso + " no turno da " + $turno + ".")
+            document.write("<br> Seus professores são " + $professor1 + " e " + $professor2 + ", a disciplina que você mais gosta é " + $disciplina + ".")
+            document.write("</td>")
+            document.write("</center>")
+        }
+    </script>
+</head>
+
+<body>
+    <center>
+        <table border="1" width="550" height="300">
+            <td>
+                <center>
+                    <font size="7"> <b>FORMULÁRIO</b> </font> <br> <br>
+                </center>
+                <form name="FORM2" action="" method="post" onsubmit="return CHUVA()">
+                    Nome: <input type="text" name="nm"> <br>
+                    Idade: <input type="text" name="id" maxlength="2"> Sexo: <name="Sexo">
+                        <input type="radio" name="fSexo" value="Masculino"> Masculino
+                        <input type="radio" name="fSexo" value="Feminino"> Feminino
+                        <input type="radio" name="fSexo" value="Outro"> Outro <br>
+                        Curso: <select name="Curso">
+                            <option value="[ESCOLHA]"> [ESCOLHA] </option>
+                            <option value="DS"> DS </option>
+                            <option value="MECÂNICA"> MECÂNICA </option>
+                            <option value="SOLDA"> SOLDA </option>
+                        </select>
+                        Turno: <select name="Turn">
+                            <option value="[ESCOLHA]"> [ESCOLHA] </option>
+                            <option value="MANHÃ"> MANHÃ </option>
+                            <option value="TARDE"> TARDE </option>
+                            <option value="NOITE"> NOITE </option>
+                        </select> <br>
+                        Professor 1: <input type="text" name="prof1"> Professor 2: <input type="text" name="prof2"> <br>
+                        Disciplina que mais gosta: <br>
+                        <input type="radio" name="fav" value="HTML"> HTML <br>
+                        <input type="radio" name="fav" value="JAVASCRIPT"> JAVASCRIPT <br>
+                        <input type="radio" name="fav" value="ARDUINO"> ARDUINO <br>
+                        <input type="radio" name="fav" value="LÓGICA"> LÓGICA <br>
+                        <input type="radio" name="fav" value="GESTALT"> GESTALT <br> <br>
+                        <input type="submit" value="GRAVAR">
+                        <input type="reset" value="LIMPAR">
+                </form>
+            </td>
+        </table>
+    </center>
+</body>
+
+</html>
